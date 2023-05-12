@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header{
+    /* aplicar uma imagem de fundo com
+    o comando background-image */
+    background-image:url("../images/mulherpropaganda.jpg");
+    /* largura do header */
+    width:100%;
+    /* altura do header */
+    height: 800px;
+    /* não repetir a imagem de fundo */
+    background-repeat: no-repeat;
+    /* alterar o tamanho da imagem de fundo */
+    background-size: 100%;
+    /* alterar a posição do plano de fundo.
+       o primeiro elemento é a posição x e segundo
+       a posição y. */
+    background-position: 0 -30px;
+    /* vamos dispor(display) o conteúdo de forma
+    flexível */
+    display: flex;
+}
+
+header #direita{
+    font-size: 150pt;
+    font-family: verdana;
+    /* por em negrito */
+    font-weight: bold;
+    color:rgb(247, 247, 247);
+    transform: rotate(-90deg);
+    flex: 1;
+    height: 300px;
+    border: 1px;
+    margin-top: 240px;
+    margin-right: -200px;
+}
+header #esquerda{
+    flex: 5;
+    padding-left: 700px;
+    color: white;
+    font-family: verdana;
+    font-size: 30pt;
+    font-weight: bold;
+    padding-top: 200px;
+    text-shadow: 3px 3px 5px black;
+}
+
+
+header #esquerda span{
+    font-size: 20pt;
+}
+header #esquerda img{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+header #esquerda #fb, header #esquerda #ig{
+    font-size: 12pt;
+    font-weight: normal;
+    text-shadow: none;
+    padding: 10 px;
+    display: flex;
+    align-items: center;
+}
+
+header #esquerda #end{
+    font-weight: lighter;
+    font-size: 10pt;
+    line-height: 25pt;
+    display:block;
+    text-shadow: none;
+}
+
+header #esquerda #end img{
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+}
