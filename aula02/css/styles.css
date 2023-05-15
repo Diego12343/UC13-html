@@ -80,3 +80,77 @@ header #esquerda #end img{
     width: 150px;
     height: 150px;
 }
+main #programacao{
+    display: flex;
+}    
+main #programacao div{
+    flex: 1;
+    font-family: verdana;
+    line-height: 35px;
+    padding: 10px;
+}
+main #programacao div h4{
+    color: orangered;
+}
+main #programacao div h3{
+    font-size: 20pt;
+    color: darkblue;
+}
+main #programacao div p span{
+    color: orangered;
+    margin: 0 10px;
+}
+main hr{
+    display: block;
+    border-color: orangered;
+    border-width: 1px;
+    width: 45%;
+    margin: 10px 0;
+}
+
+main #cursos{
+    display: flex;
+    padding: 20px;
+    font-family: Verdana;
+}
+main #cursos div{
+    flex: 1;
+}
+main #cursos div h3{
+    margin-top:35px;
+}
+main #cursos div ul{
+    padding-left: 20px;
+}
+
+footer hr{
+    width: 80%;
+    border-color: orangered;
+    border-width: 1px;
+    margin: 10px 0;
+    margin-left: auto;
+
+}
+footer #rodape div{
+    flex: 1;
+    margin: 20px 0;
+
+}
+
+footer #rodape{
+    display:flex;
+    padding: 20px;
+    font-family: Verdana;
+    margin-top: 35px;
+}
+footer #rodape div h3{
+    margin: 20px 0;
+    margin-top: 10px;
+    color:darkblue;
+}
+footer #rodape div h2{
+    color: darkblue;
+}
+footer #rodape div img {
+    padding-top: 40px;
+}
