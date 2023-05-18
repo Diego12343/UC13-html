@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+    <main>
+        <form action="confirmar.html" method="post" id="frmcadastro" enctype="multipart/form-data">
+
+            <section id="login">
+                <label for="txtusuario">Nome Usuário</label>
+                <input type="text" id="txtusuario" name="txtusuario" placeholder="digite o seu usuário" maxlength="5" required>
+            
+                <label for="txtsenha">Senha</label>
+                <input type="password" name="txtsenha" id="txtsenha" required placeholder="Senha"maxlength=> 
+                <label for="txtconfirmarsenha">Confirmar Senha</label>
+                <input type="password" name="txtconfirmarsenha" id="confirmartxtsenha" required placeholder="Senha"maxlength=> 
+
+                <label for="cbonivelacesso">Nível Acesso</label>
+                <select id="cbonivelacesso">
+                    <option value="Nenhum">Selecione</option>
+                    <option value="Admin">Administrador</option>
+                    <option value="User">Usuário</option>
+                    <option value="Guess">Convidado</option>
+                </select>
+                <section id="login">
+            </section>
+
+            <section id="dadospessoais">
+                <label for="txtnomecompleto">Nome Completo</label>
+                <input type="text" name="txtnomecompleto" placeholder="Nome e Sobrenome" maxlength="50" minlength="5" required>
+
+                <label for="txtcpf">CPF</label>
+                <input type="text" name="txtcpf" id="txtcpf" placeholder="apenas números" pattern="[0-9]{11}">
+
+                <label for="txtnascimento">Data de Nascimento</label>
+                <input type="date" name="txtnascimento" id="txtnascimento" required>
+
+                <label for="txtnomemae">Nome da Mãe</label>
+                <input type="text" name="txtnomemae" id="txtnomemae" maxlength="5" required placeholder="Nome da Mãe">
+
+                <label for="optestadocivil">Estado civil</label>
+                <input type="radio" name="optestadocivil" id="optestadocivil" value="Solteiro(a)">Solteiro(a)
+                <input type="radio" name="optestadocivil" id="optestadocivil" value="Casado(a)">Casado(a)
+                <input type="radio" name="optestadocivil" id="optestadocivil" value="Divorciado(a)">Divorciado(a)
+                <input type="radio" name="optestadocivil" id="optestadocivil" value="Viuvo(a)">Viuvo(a)
+
+                <label for="optsexo">Sexo</label>
+                <input type="radio" name="optsexo" id="optsexo" value="Masculino">Masculino
+                <input type="radio" name="optsexo" id="optsexo" value="Feminino">Feminino
+                <input type="radio" name="optsexo" id="optsexo" value="Outro">Outro
+
+            </section>
+            <section id="endereço">
+                <label for="cbotipo">Tipo</label>
+                <select name="cbotipo" id="cbotipo">
+                    <option value="Rua">Rua</option>
+                    <option value="Avenida">Avenida</option>
+                    <option value="Travessa">Travessa</option>
+                    <option value="Alameda">Alameda</option>
+                    <option value="Praça">Praça</option>
+                    <option value="Estrada">Estrada</option>
+                    <option value="Viela">Viela</option>
+            </section>
+
+            <label for="txtlogradouro">Logradouro</label>
+            <input type="text" name="txtlogradouro" id="txtlogradouro" required placeholder="Nome do local onde mora">
+
+            <label for="txtnumero">Número</label>
+            <input type="text" name="txtnumero" id="txtnumero" maxlength="10">
+
+            <label for="txtcomplemento">Complemento</label>
+            <input type="text" name="txtcomplemento" id="txtcomplemento" required placeholder="complemento">
+
+            <label for="txtcep">CEP</label>
+            <input type="text" name="txtcep" id="txtcep" placeholder="______-____" pattern="[0-9]\-[0-9]{8}">
+
+            <label for="txtbairro">Bairro</label>
+            <input type="text" name="txtbairro" id="txtbairro" required>
+
+            <label for="txtcidade">Cidade</label>
+            <input type="text" name="txtcidade" id="txtcidade" required>
+
+            <label for="txtestado">Estado</label>
+            <input type="text" name="txtestado" id="txtestado" required>
+
+            </section>
+
+            <section id="contato">
+
+            <label for="txtemail">E-Mail</label>
+            <input type="email" name="txtemail" id="txtemail" placeholder="email@email.com" required>
+
+            <label for="txttelefone">Telefone</label>
+            <input type="tel" name="txttelefone" id="txttelefone" required>
+
+            <label for="txtinstagram">Instagram</label>
+            <input type="text" name="txtinstagram" id="txtinstagram" required>
+
+            <label for="txttwitter">Twitter</label>
+            <input type="text" name="txttwitter" id="txttwitter" required>
+
+            </select>
+
+            <section id="interesse">
+                <label for="chkinteresses">Interesses:</label>
+                <input type="checkbox" name="chkespote" id="chkespote">Esporte
+                <input type="checkbox" name="chkcinema" id="chkcinema">Cinema
+                <input type="checkbox" name="chkmusica" id="chkmusica">Música
+                <input type="checkbox" name="chkarte" id="chkarte">Arte
+                <input type="checkbox" name="chkveiculos" id="chkveiculos">Veículos
+                <br>
+                <label for="txtoutros">Adicione outros interesses:</label>
+                <textarea name="txtoutros" id="txtoutros"></textarea>
+            </section>
+
+        <input type="submit" value="Gravar">
+    </form>
+</main>
+</body>
+</html>

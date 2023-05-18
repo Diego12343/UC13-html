@@ -1,0 +1,133 @@
+*{
+    /* zerar as margens */
+    margin: 0; /*margem externa zerada*/
+    padding:0; /*margem interna zerada*/
+    box-sizing: border-box;
+}
+section{
+    margin: 20px auto; /*alinha as seções ao centro*/
+    width: 70%;/*largura reduzida para 70% da tela*/
+    border:1px solid silver;
+    padding: 10px;
+    font-family: verdana;
+}
+#login label{
+    display: block;
+    font-family: Verdana;
+    font-size: 12pt;
+    margin: 5px 0;
+}
+#login input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;/*margin inferior*/
+    font-family: verdana;
+    font-size: 12pt;
+    font-weight: lighter;
+    outline-color: limegreen;/*cor da borda quando recebe foto*/
+    border-radius: 10px;/*arredondar os cantos*/
+    background-color: silver;/*cor de fundo da borda*/
+    border: 0;
+}
+#dadospessoais label{
+    font-family: verdana;
+    font-size: 12pt;
+    display: block;
+    padding: 5px;
+}
+#dadospessoais input[type=text]{
+    width: 100%;
+    padding: 15px;
+    font-family: verdana;
+    font-size: 15pt;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 10px;
+    border: 0;
+    border-bottom: 1px solid silver;
+    outline: none;
+}
+#dadospessoais input[type=date]{
+    padding: 15px;
+    font-family: verdana;
+    font-size: 15pt;
+}
+#dadospessoais input[type=date]:valid{
+    background-color: teal;
+}
+#endereco input, #endereco select{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 0;
+    background-color: beige;
+    outline: none;
+    padding: 15px;
+    font-family: verdana;
+}
+#contato{
+    text-align: center;
+}
+#contato input{
+    padding: 10px;
+}
+#interesse{
+    padding: 20px 30px 50px 30px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: 'Lucida Sans';
+    font-size: 12pt;
+}
+#interesse textarea{
+    resize: none;/*não deixa aq caixa redimencionar*/
+    display:block;
+    width: 50%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-family: verdana;
+    outline: limegreen;
+}
+#interesse textarea::-webkit-scrollbar{
+    background-color: rgb(219,238,175);
+}
+#interesse textarea::-webkit-scrollbar-button{
+    background-color: rgb(67,90,13);
+}
+#interesse textarea::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+#interesse textarea::-webkit-scrollbar-track{
+    background-color: rgb(219,238,0);
+}
+#interesse textarea::-webkit-scrollbar-button-arrows{
+    background-color: rgb(219,0,175);
+}
+header{
+    padding: 50px 0;
+    background-color: bisque;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top:0;
+}
+header h1{
+    font-family: verdana;
+    text-align: center;
+    text-shadow: 3px 5px 5px magenta;
+}
+form{
+    margin-top: 200px;
+}
+form input[type=submit]{
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border:0;
+    background-color: darkred;
+    color:white;
+    margin-bottom: 100px;
+    display: block;
+}
