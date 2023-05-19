@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@600&display=swap');
 *{
     margin:0;
     padding:0;
@@ -15,13 +16,30 @@ main{
     display: flex;
 
 }
+#area h3{
+    font-size:'Bebas Neue', sans-serif;
+    color:black;
+    margin-left:  30px;
+    padding-top: 10px;
+}
+#area {
+    display: flex;
+    justify-content: space-between;
+
+}
+#area img{
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+    margin-right: 90px;
+}
 form{
-    flex:1;
+    flex: 1;
 }
 
 #image {
     background-image: url(../img/astronauta.jpg) ;
-    width:10%;
+    width:100%;
     height:600px;
     flex:1;
     background-position: 0px -150px;
@@ -29,49 +47,66 @@ form{
     border-top-right-radius: 50px;
     border-bottom-right-radius:50px;
 }
-img{
-    width: 2%;
-    margin: 10px;
-}
-
-#login input[type=submit] {
-    font-size: 8pt;
-    margin-left: 80px;
-    font-family: Segoe Ui;
-    color: white;
-    background-color: black;
+h1{
+    font-size: 60pt;
+    font-family:'Outfit', sans-serif;
+    color:black;
     margin-top: 20px;
-    width: 300px;
-    height: 50px;
-    border-radius: 40px;
+    margin-left: 80px;
 }
-
-#login input{
-    display: block;
+h2{
+    font-size: 10pt;
+    font-family:'Outfit', sans-serif;
+    color:black;
+    margin-top: 20px;
+    margin-left: 115px;
+    padding-bottom: 5px;
+    text-align: left;
 }
-
+#gl img{
+    width: 200px;
+    height: 80px;
+    margin-left: 80px;
+    width: 330px;
+    
+}
+#or img{
+    margin-left: 160px;
+}
 #login input[type=email]{
-   padding: 10px;
-   border-radius: 5px;
-}
-
-#login input[type=password]{
-    margin-top: 17px;
-    margin-left: 120px;
-    width: 220px;
-    height: 40px;
-    width: 220px;
-    font-size: 7pt;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
     border-radius: 5px;
+    margin-left: 100px;
+    width: 280px;
+ }
+ #login input[type=password]{
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 280px;
+}
+h4, #login span{
+    font-size: 10pt;
+    margin-left: 275px;
+    margin-top: 5px;
+    color: rgb(14,74,206);
 }
 
+input[type=submit] {
+    width: 280px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+#login span{
+    font-size: 10pt;
+    margin-top: 5px;
+    color: rgb(14,74,206);
+    margin-right: auto;
+    margin-left: 30px;
+}
 #login h2{
-    font-family: 'Bebas Neue', sans-serif;
-    margin-left: 50px;
-    margin-top: 25px;
-}
-
-#login h1{
     padding-left: 30px;
 }
