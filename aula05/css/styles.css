@@ -1,96 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@600&display=swap');
-*{
-    margin:0;
-    padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: silver;
 }
-main{
+
+main {
     background-color: white;
     width: 60%;
     margin: 50px auto;
-    border-radius:50px;
+    border-radius: 50px;
     height: 600px;
     display: flex;
 
 }
-#area h3{
-    font-size:'Bebas Neue', sans-serif;
-    color:black;
-    margin-left:  30px;
+
+#area h3 {
+    font-size: 'Bebas Neue', sans-serif;
+    color: black;
+    margin-left: 30px;
     padding-top: 10px;
 }
+
 #area {
     display: flex;
     justify-content: space-between;
 
 }
-#area img{
+
+#area img {
     width: 30px;
     height: 30px;
     margin-top: 30px;
     margin-right: 90px;
 }
-form{
+
+form {
     flex: 1;
 }
 
 #image {
-    background-image: url(../img/astronauta.jpg) ;
-    width:100%;
-    height:600px;
-    flex:1;
+    background-image: url(../img/astronauta.jpg);
+    width: 100%;
+    height: 600px;
+    flex: 1;
     background-position: 0px -150px;
     background-size: 100%;
     border-top-right-radius: 50px;
-    border-bottom-right-radius:50px;
+    border-bottom-right-radius: 50px;
 }
-h1{
+
+h1 {
     font-size: 60pt;
-    font-family:'Outfit', sans-serif;
-    color:black;
+    font-family: 'Outfit', sans-serif;
+    color: black;
     margin-top: 20px;
     margin-left: 80px;
 }
-h2{
+
+h2 {
     font-size: 10pt;
-    font-family:'Outfit', sans-serif;
-    color:black;
+    font-family: 'Outfit', sans-serif;
+    color: black;
     margin-top: 20px;
     margin-left: 115px;
     padding-bottom: 5px;
     text-align: left;
 }
-#gl img{
+
+#gl img {
     width: 200px;
     height: 80px;
     margin-left: 80px;
     width: 330px;
-    
+
 }
-#or img{
+
+#or img {
     margin-left: 160px;
 }
-#login input[type=email]{
+
+#login input[type=text] {
     padding: 10px;
     border-radius: 5px;
     margin-left: 100px;
     width: 280px;
- }
- #login input[type=password]{
+}
+
+#login input[type=password] {
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
     margin-left: 100px;
     width: 280px;
 }
-h4, #login span{
+
+h4,
+#login span {
     font-size: 10pt;
     margin-left: 275px;
     margin-top: 5px;
-    color: rgb(14,74,206);
+    color: rgb(14, 74, 206);
 }
 
 input[type=submit] {
@@ -100,13 +115,101 @@ input[type=submit] {
     margin-left: 100px;
     margin-top: 15px;
 }
-#login span{
+
+#login span {
     font-size: 10pt;
     margin-top: 5px;
-    color: rgb(14,74,206);
+    color: rgb(14, 74, 206);
     margin-right: auto;
     margin-left: 30px;
 }
-#login h2{
+
+#login h2 {
     padding-left: 30px;
+}
+
+#shadow {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: -100;
+    opacity: 0;
+    transition: ease 1s;
+}
+
+#shadow div {
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    padding: 20px;
+    margin: 10% auto 10% auto;
+    height: 400px;
+}
+
+#fechar {
+    position: absolute;
+    right: 28%;
+    top: 18%;
+    /*background-color: black*/
+    ;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20pt;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Lucida Sans';
+    text-decoration: none;
+}
+
+#fechar:hover {
+    transform: rotate(360deg);
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #eee;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    border-bottom: 1px solid #eee;
+    width: 98%;
+    padding: 10px;
+    font-size: 15pt;
+    font-weight: lighter;
+    font-family: 'Lucida Sans';
+}
+
+input[type=file] {
+    padding: 10px;
+    font-weight: lighter;
+    font-family: 'Lucida Sans';
+    font-size: 12pt;
+}
+
+input[type=submit] {
+    margin: 10px auto;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-size: 12pt;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+    color: white;
+}
+#registro{
+    cursor: pointer;
 }

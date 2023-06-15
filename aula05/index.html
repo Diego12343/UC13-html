@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,53 @@
     <title>Astronauta de Marmore</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+
 
     <main>
-        <form>
-        <div id="area">
-            <h3>Haze.</h3>
-            <img src="img/reino unido.jpg">
-        </div>
-        <h1>Hi there!</h1>
-        <h2>Welcome to Haze.Community Dashboard</h2>
-        <span id="gl"><img src="img/certo.png"></span><br>
-        <span id="or"><img src="img/or.png"></span>
+        <!--O comando return false é utilizado no onSumit para evitar 
+        que o formulário seja enviado-->
+        <form onsubmit="return false">
+            <div id="area">
+                <h3>Haze.</h3>
+                <img src="img/reino unido.jpg">
+            </div>
+            <h1>Hi there!</h1>
+            <h2>Welcome to Haze.Community Dashboard</h2>
+            <span id="gl"><img src="img/certo.png"></span><br>
+            <span id="or"><img src="img/or.png"></span>
 
-        <section id="login">
-           <input type="email" id="txtemail" name="txtemail" placeholder="Your email" required><br>
-           <input type="password" name="txtsenha"  id="txtsenha" required placeholder="Password" maxlength=>
-           <h4>Forgot password?</h4>
-           <input type="submit" value="Log In">
-           <h2>Don't have an account?<span>Sing up</span></h2>    
-         
-        </section>
+            <section id="login">
+                <input type="text" id="txtuser" name="txtuser" placeholder="Username" required><br>
+                <input type="password" name="txtsenha" id="txtpass" required placeholder="Password" >
+                <h4>Forgot password?</h4>
+
+                <input type="submit" value="Log In" id="btnLogin">
+                <h2>Don't have an account?<span id="registro">Sing up</span></h2>
+
+            </section>
         </form>
         <div id="image"></div>
-            
+
         </div>
+
+        <div id="shadow">
+            <div>
+                <a href="#" id="fechar"> &times; </a>
+                <form onsubmit="return false">
+                    <input type="text" id="txtusuario" placeholder="Nome Usuário">
+                    <input type="password" id="txtsenha" placeholder="Senha">
+                    <input type="email" id="txtemail" placeholder="E-mail">
+                    <input type="file" id="txtfoto" placeholder="Foto do usuário">
+                    <input type="submit" value="Cadastrar" id="btncadastrar">
+                </form>
+            </div>
+        </div>
+
     </main>
 
-
+    <script src="js/script.js"></script>
 </body>
+
 </html>
